@@ -1,12 +1,20 @@
 package com.digitaljournal.digitaljournal;
 
+
 import javax.persistence.Entity;
+import org.springframework.data.annotation.Id;
 
 @Entity
 public class Digitaljournal {
-
+	
+	@Id
 	long id;
 	String project;
+	
+	
+	public Digitaljournal() {
+	}
+	
 	public Digitaljournal(long id, String project) {
 		super();
 		this.id = id;
